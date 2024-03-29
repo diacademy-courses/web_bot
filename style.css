@@ -1,0 +1,69 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url('img/основной фон.jpg');
+    /* Замените путь на реальный путь к вашему изображению */
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    min-height: 100vh;
+}
+
+.message-input {
+    color: white;
+}
+
+
+.user-message {
+    color: rgb(255, 255, 255); /* Цвет текста для сообщений пользователя */
+}
+
+.bot-message {
+    color: rgb(255, 238, 0); /* Цвет текста для сообщений бота */
+}
+
+.chat-container {
+    background-color: rgba(56, 56, 20, 0.555); /* Прозрачный белый фон для контейнера чата */
+    padding: 50px;
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgb(251, 255, 0); /* Тень для контейнера чата */
+    text-align: center;
+    width: 95%; /* Ширина контейнера чата */
+    max-width: 800px; /* Максимальная ширина контейнера чата */
+    margin-bottom: 20px; /* Отступ снизу */
+    position: relative; /* Добавляем позиционирование */
+}
+
+input[type="text"] {
+    width: calc(100% - 80px); /* Ширина текстового поля (ширина экрана минус ширина кнопки) */
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    margin-right: 10px; /* Отступ между текстовым полем и кнопкой */
+    background-color: rgba(37, 35, 0, 0.8); /* Прозрачный белый фон */
+    position: absolute; /* Позиционируем абсолютно внутри контейнера чата */
+    bottom: 10px; /* Отступ снизу */
+    left: 10px; /* Отступ слева */
+}
+
+button {
+    background-color: #e2de0088; /* Цвет фона кнопки */
+    color: white;
+    padding: 5px 10px;
+    font-size: 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    position: absolute; /* Позиционируем абсолютно внутри контейнера чата */
+    bottom: 10px; /* Отступ снизу */
+    right: 5px; /* Отступ справа */
+}
+
+button:hover {
+    background-color: #45a049; /* Измененный цвет фона при наведении */
+}
+

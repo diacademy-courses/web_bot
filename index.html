@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Привет, я бот</title>
+    <link rel="stylesheet" href="style.css"> <!-- Подключаем файл стилей -->
+    <style>
+        /* Дополнительные стили для прокрутки */
+        .chat-box {
+            overflow-y: auto;
+            max-height: 300px; /* Максимальная высота чат-бокса для прокрутки */
+        }
+    </style>
+</head>
+<body>
+    <div class="chat-container">
+        <div class="chat-box" id="chat-box">
+            <!-- Здесь будут отображаться сообщения -->
+        </div>
+        <input type="text" id="user-input" name="user-input" class="message-input" placeholder="Введите сообщение...">
+        <button class="btn" onclick="sendMessage()">>></button>
+    </div>
+
+    <script src="script.js"></script> <!-- Подключаем файл скриптов -->
+</body>
+</html>
+
